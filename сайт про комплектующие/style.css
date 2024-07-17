@@ -1,0 +1,213 @@
+div.test {
+    border-width: 10px;
+    border-style: dashed;
+    border-radius: 5%;
+    border-color: blueviolet;
+    margin: 10px;
+    height: auto;
+    background: linear-gradient(45deg, #ffffff 25%, #be96ff 100%);
+}
+
+div.menu {
+    font-size: 20px;
+    color: #030303;
+    width: 500px;
+    height: 100px;
+    display: block;
+    border-style: double;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(182, 182, 55, 0.5);
+}
+
+div p {
+    font-size: 25px;
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+ul,
+ol.new {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .hr a:hover {
+    transition-duration: 0.5s;
+    font-size: 25px;
+    color: #960196;
+}
+
+nav .hr a {
+    border-style: groove;
+    font-size: 20px;
+    color: rgb(79, 133, 235);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    background: radial-gradient(#ffffff, #be96ff);
+}
+
+ul.new li:nth-child(odd) {
+    background: linear-gradient(45deg, rgb(108, 108, 241)25%, rgb(20, 99, 5)55%);
+}
+
+ul.new li:nth-child(even) {
+    background: linear-gradient(45deg, rgb(111, 226, 101)25%, rgb(218, 221, 35)55%);
+}
+
+ul.hr {
+    margin: 1;
+    /* Обнуляем значение отступов */
+    padding: 5px;
+    /* Значение полей */
+}
+
+ul.hr li {
+    display: inline-block;
+    /* Отображать как строчный элемент */
+    margin-right: 100px;
+    /* Отступ слева */
+    padding: 5px;
+    /* Поля вокруг текста */
+}
+
+nav {
+    border-style: ridge;
+    background: linear-gradient(45deg, rgb(0, 255, 0) 10%, #be96ff 40%);
+}
+
+.dropdown {
+    background-color: rgba(245, 245, 220, 0.3);
+    position: relative;
+    display: inline-block;
+    height: auto;
+    font-size: 30px;
+    width: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    background: beige;
+    display: block;
+    transition-duration: 0.5s;
+    font-size: 25px;
+    color: #053f5a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+/*@keyframes cube {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(1830px, 0); }
+    50% { transform: translate(1830px, 130px); }
+    75% { transform: translate(0, 130px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes cubecolor {
+    0% { background-color: rgb(131, 0, 113);}
+    25% { background-color: blue;}
+    50% { background-color: green; }
+    75% { background-color: yellow; }
+    100% {background-color: rgb(255, 0, 200); }
+}
+div.cube { 
+    height: 50px;
+    width: 50px;
+    animation-name: cube;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation:cube 4s linear infinite,cubecolor 4s linear infinite;
+}*/
+
+.button1 {
+    color: rgb(255, 11, 11);
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button2 {
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(250, 0, 208);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button3 {
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(98, 143, 98);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button4 {
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(226, 241, 7);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button5 {
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(25, 0, 247);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tablejs {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-style: inset;
+    border-color: deepskyblue;
+}
+
+#adblock {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    display: block;
+    background-color: rgba(255, 255, 1, 0.2);
+    left: 0;
+    top: 0;
+}
+
+#banner {
+    border-style: groove;
+    border-width: 5px;
+    height: 300px;
+    width: 400px;
+    background-color: #053f5a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+#textbanner {
+    font-size: 20px;
+    color: deepskyblue;
+    padding: 0px;
+    position: fixed;
+}
+
+#close {
+    height: 15px;
+    width: 15px;
+    padding-left: 385px;
+    position: fixed;
+}

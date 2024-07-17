@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <style>
+        .button {
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        ul {
+            border-style: groove;
+        }
+        div.movecircle {
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+@keyframes cubecolor {
+    0% { background-color: rgb(131, 0, 113);}
+    25% { background-color: blue;}
+    50% { background-color: green; }
+    75% { background-color: yellow; }
+    100% {background-color: rgb(255, 0, 200); }
+}
+div.movecircle { 
+    transform: translate(100,200);
+    animation-name: cube;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation:cube 4s linear infinite,cubecolor 4s linear infinite;
+}
+    </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   </head>
+   <body>
+    <div>
+    <button class="button">Кнопка 1</button>
+    <button class="button">Кнопка 2</button>
+    <button class="button">Кнопка 3</button>
+    </div>
+    <div>
+        <ul id="1">
+            <li>Новый</li>
+            <li>Новый</li>
+            <li>Новый</li>
+        </ul>
+        <button class="add">Добавить</button>
+    </div>
+    <div class="movecircle" id="circle">
+    </div>
+    <script src="8lab.js"></script>
+   </body>
+</html>

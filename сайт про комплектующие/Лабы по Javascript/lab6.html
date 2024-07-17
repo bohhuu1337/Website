@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <style>
+        table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(63, 115, 156);
+}
+th, td {
+  padding: 20px;
+}
+    </style>
+<head>
+ <meta charset="UTF-8">
+</head>
+<body>
+ <div id="1"></div>
+ <div>
+    <table id="2">
+   <caption>Таблица</caption>
+      <tr>
+         <th>ФИО</th>
+         <th>Рост</th>
+         <th>Возраст</th>
+      </tr>
+</table>
+ </div>
+ <script>
+function language(){
+    var language={
+        ru:["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],
+        en:["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    }
+    var vopros=confirm("Вывести дни недели на английском?");
+    if(vopros==true){
+        for(let i=0;i<7;i++){
+          document.getElementById('1').innerHTML+=language.en[i]+" ";
+        }
+    }
+    else{
+        for(let i=0;i<7;i++){
+          document.getElementById('1').innerHTML+=language.ru[i]+" ";
+        }
+    }
+  }
+    function human(fio,rost,vozrast) {
+  this.fio = fio
+  this.rost= rost
+  this.vozrast=vozrast
+}
+let fio=prompt("Введите ФИО");
+let rost=prompt("Введите рост");
+let vozrast=prompt("Введите возраст");
+let user = new human(fio,rost,vozrast);
+document.getElementById('2').innerHTML+=`<tr><th>${user.fio}</th><th>${user.rost}</th><th>${user.vozrast}</th></tr>`;
+ </script>
+</body>
+</html>

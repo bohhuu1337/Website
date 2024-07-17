@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   </head>
+   <body>
+        <form id="main-form" onsubmit="return add(this)" method="post">
+            <label for="name">Комплектующая:</label>
+            <input type="text" name="name" placeholder="Комплектующая" id="name"><br><br>
+            <label for="name">Модель:</label>
+            <input type="text" name="model" placeholder="Модель" id="model"><br><br>
+            <input type="submit" name="submit" value="Готово">
+        </form>
+        <div>
+            <table class = "tablejs"; id = "table">
+                <tr>
+                    <th><font color = "blue">  №  </font></th>
+                    <th><font color = "blue">  Комплектующая  </font></th>
+                    <th><font color = "blue">  Модель  </font></th>
+                    <th><font color = "blue">  Картинка  </font></th>
+                </tr>
+            </table>
+        </div>
+        <script src="8individ.js" ></script>
+   </body>
+</html>
+

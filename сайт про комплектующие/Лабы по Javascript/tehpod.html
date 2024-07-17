@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body vlink="#cecece" alink="#ff0000">
+
+<div id="block">
+    <p id="block1"></p>
+</div>
+<script>
+    var red= Math.floor(Math.random()*255)+1;
+    var green= Math.floor(Math.random()*255)+1;
+    var blue= Math.floor(Math.random()*255)+1;
+    var width= Math.floor(Math.random()*500)+300;
+    var height=Math.floor(Math.random()*500)+300;
+    var s= width*height;
+    document.getElementById('block').innerHTML=`<div style="width:${width}px;height:${height}px;background-color:rgb(${red} ${green} ${blue});margin:auto"> <p style="text-align:center;margin:auto;position: relative;
+    top: 50%; font-size:30px">Площадь блока =${s}</p>`;
+</script>
+</body>
+</html>
+</html>
